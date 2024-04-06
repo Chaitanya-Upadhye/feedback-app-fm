@@ -1,10 +1,18 @@
-import type { MetaFunction } from "@remix-run/node";
+import {
+  json,
+  type LoaderFunctionArgs,
+  type MetaFunction,
+} from "@remix-run/node";
 
 export const meta: MetaFunction = () => {
   return [
     { title: "New Remix App" },
     { name: "description", content: "Welcome to Remix!" },
   ];
+};
+
+export const loader = async ({ request, params }: LoaderFunctionArgs) => {
+  return json({});
 };
 
 export default function Index() {
