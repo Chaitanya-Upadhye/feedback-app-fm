@@ -1,3 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  /* For hsl(198deg 93% 60% / <alpha-value>) */
+
+  --mainPink: 282deg 83% 52%;
+  --mainBlue: 230deg 76% 59%;
+  --navyText: 230deg 31% 31%;
+  --mainBg: 231deg 100% 97%;
+  --bgLight: 230deg 60% 98%;
+  --navyBg: 231deg 33% 34%;
+  --mediumGray: 224deg 20% 49%;
+  --orange: 14deg 83% 74%;
+  --lightBlue: 204deg 94% 68%;
+  --white: 0deg 0% 100%;
+}
