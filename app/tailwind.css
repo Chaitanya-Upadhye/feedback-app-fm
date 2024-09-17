@@ -17,4 +17,49 @@
   --orange: 14deg 83% 74%;
   --lightBlue: 204deg 94% 68%;
   --white: 0deg 0% 100%;
+  --red: 0deg 67% 53%;
+}
+.oval {
+  width: 56px;
+  height: 56px;
+  flex-grow: 0;
+  background-image: radial-gradient(
+    circle at 104% -10%,
+    #e84d70,
+    #a337f6 58%,
+    #28a7ed 110%
+  );
+  border-radius: 9999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: xx-large;
+  position: absolute;
+  top: -30px;
+  left: 42px;
+}
+.oval-icon {
+  color: #fff;
+}
+.sel-content {
+  box-shadow: 0 10px 40px -7px rgba(55, 63, 104, 0.35);
+}
+textarea,
+input {
+  width: 100%;
+  background-color: hsl(232deg 100% 97.06%);
+  outline: none;
+}
+.badge {
+  background-image: radial-gradient(
+    circle at 104% -10%,
+    #e84d70,
+    #a337f6 56%,
+    #28a7ed 106%
+  );
+  align-content: end;
+}
+.filter-select {
+  color: var(--bgLight);
 }

@@ -1,9 +1,11 @@
 import {
   json,
+  redirect,
   type LoaderFunctionArgs,
   type MetaFunction,
 } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
+import { getSupabase } from "~/supabase";
 
 export const meta: MetaFunction = () => {
   return [
@@ -25,6 +27,13 @@ export interface Reply extends Comment {
   replyingTo: string;
 }
 export const loader = async ({ request, params }: LoaderFunctionArgs) => {
+  const supabase = getSupabase({ request });
+  const { data, error } = await supabase.from("profile").select("*").single();
+
+  if (!data?.username) {
+    throw redirect("/profile/create");
+  }
+  throw redirect("/suggestion/new");
   const comments = [
     {
       id: 3,

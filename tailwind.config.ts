@@ -56,21 +56,21 @@ export default {
         "16px",
         {
           lineHeight: "23px",
-          fontWeight: "regular",
+          fontWeight: "normal",
         },
       ],
       "body-md": [
         "15px",
         {
           lineHeight: "22px",
-          fontWeight: "regular",
+          fontWeight: "normal",
         },
       ],
       "body-bold": [
         "13px",
         {
           lineHeight: "19px",
-          fontWeight: "semibold",
+          fontWeight: "bold",
         },
       ],
     },
